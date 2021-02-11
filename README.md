@@ -1,3 +1,13 @@
+# Stack
+
+reduxsauce
+react-redux
+redux-saga
+redux-persist
+apisauce
+react-router-dom
+seamless-immutable
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
