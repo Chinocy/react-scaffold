@@ -1,4 +1,3 @@
-import Immutable from 'seamless-immutable';
 import { createReducer, createActions } from 'reduxsauce';
 
 const { Types, Creators } = createActions({
@@ -11,10 +10,10 @@ const { Types, Creators } = createActions({
 export const userTypes = Types;
 export const userActions = Creators;
 
-const INITIAL_STATE = Immutable({
+const INITIAL_STATE = {
   user: null,
   fetching: false,
-});
+};
 
 const setUser = (state, { user }) => ({ ...state, fetching: false, user });
 

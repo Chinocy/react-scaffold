@@ -1,12 +1,12 @@
 # Stack
 
-* reduxsauce
-* react-redux
-* redux-saga
-* redux-persist
-* apisauce
-* react-router-dom
-* seamless-immutable
+- antd
+- reduxsauce
+- react-redux
+- redux-saga
+- redux-persist
+- apisauce
+- react-router-dom
 
 # Getting Started with Create React App
 
