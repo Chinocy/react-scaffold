@@ -25,7 +25,7 @@ const Login = () => {
         <Row align='middle' style={{ height: '100%' }}>
           <Col>
             <Typography.Title level={3} style={{ color: 'white', margin: 0 }}>
-              1HEALTH
+              SCAFFOLD
             </Typography.Title>
           </Col>
         </Row>
@@ -77,9 +77,13 @@ const Login = () => {
       </Content>
       <Footer className='footer'>
         <Space>
-          <Image src='https://1health.dev.onpressidium.com/wp-content/uploads/2020/12/ico-1health-icon-light.svg' />
+          <Image
+            src='https://www.arteneo.com/wp-content/uploads/2016/06/copyright-737x643.png'
+            width={30}
+            preview={false}
+          />
           <Typography.Text style={{ color: 'white' }}>
-            Testing as a Service
+            All rights reserved
           </Typography.Text>
         </Space>
       </Footer>

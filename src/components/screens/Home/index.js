@@ -23,7 +23,7 @@ const Home = () => {
         <Row align='middle' style={{ height: '100%' }}>
           <Col>
             <Typography.Title level={3} style={{ color: 'white', margin: 0 }}>
-              1HEALTH
+              SCAFFOLD
             </Typography.Title>
           </Col>
         </Row>
