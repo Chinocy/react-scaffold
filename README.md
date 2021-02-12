@@ -9,6 +9,8 @@
 - react-router-dom
 - lodash
 - prop-types
+- husky (for pre-commit)
+- eslint
 
 # Getting Started with Create React App
 
