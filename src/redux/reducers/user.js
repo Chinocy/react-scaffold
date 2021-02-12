@@ -2,8 +2,8 @@ import Immutable from 'seamless-immutable';
 import { createReducer, createActions } from 'reduxsauce';
 
 const { Types, Creators } = createActions({
-  login: ['username', 'password', 'onSuccess'],
-  logout: null,
+  login: ['values', 'history'],
+  logout: ['history'],
   userSet: ['user'],
   fetchingSet: ['fetching'],
 });
@@ -16,12 +16,13 @@ const INITIAL_STATE = Immutable({
   fetching: false,
 });
 
-const setUser = (state, { user }) =>
-  Immutable.merge(state, { fetching: false, user });
-const login = (state) => Immutable.merge(state, { fetching: true });
-const logout = (state) => Immutable.merge(state, { fetching: true });
-const setFetching = (state, { fetching }) =>
-  Immutable.merge(state, { fetching });
+const setUser = (state, { user }) => ({ ...state, fetching: false, user });
+
+const login = (state) => ({ ...state, fetching: true });
+
+const logout = (state) => ({ ...state, fetching: true });
+
+const setFetching = (state, { fetching }) => ({ ...state, fetching });
 
 export const HANDLERS = {
   [Types.LOGIN]: login,

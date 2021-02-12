@@ -1,7 +1,8 @@
 import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import { userActions } from '../../redux/reducers/user';
+import { useHistory } from 'react-router-dom';
 
-function useUser() {
+const useUser = () => {
   const userStore = useSelector(
     (store) => ({
       user: store.user.user,
@@ -11,18 +12,19 @@ function useUser() {
     shallowEqual,
   );
 
+  let history = useHistory();
+
   const dispatch = useDispatch();
 
-  const logout = () => dispatch(userActions.logout());
+  const logout = () => dispatch(userActions.logout(history));
 
-  const login = (username, password, onSuccess) =>
-    dispatch(userActions.login(username, password, onSuccess));
+  const login = (values) => dispatch(userActions.login(values, history));
 
   return {
     ...userStore,
     login,
     logout,
   };
-}
+};
 
 export default useUser;

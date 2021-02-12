@@ -1,16 +1,17 @@
 import { put, takeLatest, delay } from 'redux-saga/effects';
 import { userTypes, userActions } from '../redux/reducers/user';
+import paths from '../routes/paths';
 
-function* login({ api }, { username, password, onSuccess }) {
-  const response = yield delay(2000);
-  onSuccess && onSuccess();
+function* login({ api }, { values, history }) {
+  const response = yield delay(1000);
   yield put(
     userActions.userSet({ first_name: 'First name', last_name: 'Last name' }),
   );
+  history.push(paths.home);
 }
 
-function* logout({ api }) {
-  const response = yield delay(2000);
+function* logout({ api }, { history }) {
+  history.push(paths.login);
   yield put(userActions.userSet(null));
 }
 
