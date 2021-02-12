@@ -7,6 +7,8 @@
 - redux-persist
 - apisauce
 - react-router-dom
+- lodash
+- prop-types
 
 # Getting Started with Create React App
 

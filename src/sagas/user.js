@@ -3,7 +3,7 @@ import { userTypes, userActions } from '../redux/reducers/user';
 import paths from '../routes/paths';
 
 function* login({ api }, { values, history }) {
-  const response = yield delay(1000);
+  yield delay(1000);
   yield put(
     userActions.userSet({ first_name: 'First name', last_name: 'Last name' }),
   );
