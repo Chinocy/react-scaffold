@@ -14,10 +14,12 @@ const DefaultLayout = ({ title, children }) => {
     <Layout className='layout'>
       <Header className='header'>
         <Row align='middle' className='full-height'>
-          <Col span={12}>
-            <Title className='primary-text no-margin'>{title}</Title>
+          <Col flex='auto'>
+            <Title className='primary-text no-margin' level={4}>
+              {title}
+            </Title>
           </Col>
-          <Col span={2} offset={10}>
+          <Col flex={1} align='right'>
             <Text className='primary-text'>{`${user.first_name} ${user.last_name}`}</Text>
             <Button
               type='primary'
