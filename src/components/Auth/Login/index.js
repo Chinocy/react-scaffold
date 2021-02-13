@@ -10,7 +10,7 @@ const Login = () => {
 
   return (
     <Layout className='layout'>
-      <Content className='content'>
+      <Content className='login-content'>
         <Row justify='center' align='middle' className='full-height'>
           <Col>
             <Form
