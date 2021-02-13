@@ -7,7 +7,7 @@ function* login(_, { history }) {
   yield put(
     authActions.userSet({ first_name: 'First name', last_name: 'Last name' }),
   );
-  history.push(paths.testList);
+  history.push(paths.home);
 }
 
 function* logout(_, { history }) {
