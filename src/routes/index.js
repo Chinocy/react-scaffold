@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Login from '../components/screens/Login';
-import Home from '../components/screens/Home';
+import Login from '../components/auth/Login';
+import TestList from '../components/test/TestList';
 import paths from './paths';
 export default function App() {
   return (
@@ -11,8 +11,8 @@ export default function App() {
           <Route path={paths.login} exact>
             <Login />
           </Route>
-          <Route path={paths.home} exact>
-            <Home />
+          <Route path={paths.testList} exact>
+            <TestList />
           </Route>
         </Switch>
       </div>

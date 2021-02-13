@@ -5,7 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import configureStore from './redux/configureStore';
-import 'antd/dist/antd.css';
+import './theme/index.less';
+
 const { store, persistor } = configureStore;
 
 ReactDOM.render(

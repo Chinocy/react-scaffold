@@ -1,5 +1,5 @@
 import React from 'react';
-import useUser from '../../../hooks/useUser';
+import useAuth from '../../../hooks/useAuth';
 import './styles.css';
 import {
   Col,
@@ -14,8 +14,8 @@ import {
 
 const { Header, Footer, Content } = Layout;
 
-const Home = () => {
-  const { user, logout } = useUser();
+const TestList = () => {
+  const { user, logout } = useAuth();
 
   return (
     <Layout className='layout'>
@@ -55,4 +55,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default TestList;

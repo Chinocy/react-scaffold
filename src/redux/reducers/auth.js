@@ -7,8 +7,8 @@ const { Types, Creators } = createActions({
   fetchingSet: ['fetching'],
 });
 
-export const userTypes = Types;
-export const userActions = Creators;
+export const authTypes = Types;
+export const authActions = Creators;
 
 const INITIAL_STATE = {
   user: null,
