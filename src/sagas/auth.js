@@ -4,9 +4,7 @@ import paths from '../config/paths';
 
 function* login(_, { history }) {
   yield delay(1000);
-  yield put(
-    authActions.userSet({ first_name: 'First name', last_name: 'Last name' }),
-  );
+  yield put(authActions.userSet({ first_name: 'John', last_name: 'Wick' }));
   history.push(paths.home);
 }
 

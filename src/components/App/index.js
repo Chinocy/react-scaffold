@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Login from '../auth/Login';
+import Login from '../Auth/Login';
 import paths from '../../config/paths';
 import PrivateRoute from './PrivateRoute';
 import privateRoutes from './privateRoutes';
