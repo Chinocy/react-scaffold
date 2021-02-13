@@ -1,6 +1,6 @@
 import { put, takeLatest, delay } from 'redux-saga/effects';
 import { authTypes, authActions } from '../redux/reducers/auth';
-import paths from '../routes/paths';
+import paths from '../config/paths';
 
 function* login(_, { history }) {
   yield delay(1000);

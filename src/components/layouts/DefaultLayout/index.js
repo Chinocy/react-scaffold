@@ -4,7 +4,7 @@ import { Layout, Typography, Space, Image } from 'antd';
 
 const { Header, Content, Footer } = Layout;
 const { Text } = Typography;
-const Default = () => {
+const DefaultLayout = () => {
   return (
     <Layout className='layout'>
       <Header className='header'></Header>
@@ -23,4 +23,4 @@ const Default = () => {
   );
 };
 
-export default Default;
+export default DefaultLayout;
